@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # BeyondMD Project
 
 1. Dockerizing a Simple Page Using Docker Compose
@@ -78,4 +77,3 @@ Remember to always ensure your security groups are correctly configured, especia
 - SSH (Port 22)
 
 > **Note**: Always ensure that your firewall or security groups are configured according to the needs of your application and the best security practices.
->>>>>>> c962bba1315a5da2001d8ce86fbdc65c511077a5
