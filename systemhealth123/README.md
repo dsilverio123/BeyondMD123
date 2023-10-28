@@ -1,1 +1,0 @@
-# BeyondMD Takehome Project
