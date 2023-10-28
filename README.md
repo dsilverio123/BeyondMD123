@@ -1,5 +1,11 @@
 # BeyondMD Projects
 
+## Platform and Technologies
+- **Cloud Platform**: AWS
+- **Service**: EC2 Instance
+- **Containerization**: Docker
+- **OS**: Ubuntu
+  
 ## 1. Dockerized "Hello BeyondMD!" Page
 
 ### Description
