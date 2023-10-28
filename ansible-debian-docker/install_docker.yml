@@ -37,3 +37,11 @@
           - docker-compose
         state: present
 
+    - name: Check Docker Version
+      command: docker --version
+      register: docker_version_result
+      changed_when: false
+
+    - name: Display Docker Version
+      debug:
+        var: docker_version_result.stdout
