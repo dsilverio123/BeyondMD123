@@ -47,7 +47,6 @@ net-tools: sudo apt install net-tools
 <h4>Dependencies</h4>
 <pre><code>
 Ansible: sudo apt install ansible
-Vagrant (Optional, for local testing): sudo apt install vagrant
 </code></pre>
 
 <hr>
