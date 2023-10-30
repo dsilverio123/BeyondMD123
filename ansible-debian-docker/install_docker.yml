@@ -33,7 +33,7 @@
 
   - name: Set up the Docker stable repository
     apt_repository:
-      repo: deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable
+      repo: deb [arch=amd64] https://download.docker.com/linux/debian bookworm stable"
       state: present
 
   - name: Install Docker CE
