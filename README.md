@@ -11,7 +11,7 @@
 <hr>
 
 <h3>1. Dockerized "Hello BeyondMD!" Page</h3>
-<a href="#">View the Project in the Home Directory</a>
+<a href="https://github.com/dsilverio123/BeyondMD123/tree/main/home">View the Project in the Home Directory</a>
 
 <h4>Description</h4>
 <p>A simple page built with HTML, CSS, and/or JavaScript that displays "Hello BeyondMD!". This web page is dockerized to ensure easy deployment and consistent runtime environment.</p>
@@ -25,7 +25,7 @@ Docker Compose: sudo apt install docker-compose
 <hr>
 
 <h3>2. System Health Reporting Script for Debian</h3>
-<a href="#">View the System Health Project</a>
+<a href="https://github.com/dsilverio123/BeyondMD123/tree/main/systemhealth123">View the System Health Project</a>
 
 <h4>Description</h4>
 <p>A script tailored for Debian systems to gather and report various system health metrics, including CPU usage, memory consumption, disk utilization, active users, and running processes.</p>
@@ -59,7 +59,7 @@ sudo docker-compose up
 <hr>
 
 <h3>3. Ansible Playbook for Docker on Debian Bookworm</h3>
-<a href="#">View the Ansible Playbook Project</a>
+<a href="https://github.com/dsilverio123/BeyondMD123/tree/main/ansible-debian-docker">View the Ansible Playbook Project</a>
 
 <h4>Description</h4>
 <p>An idempotent Ansible playbook designed for Debian Bookworm systems. This playbook automates the installation and configuration of Docker, ensuring it's executed without unnecessary changes to the system state.</p>
