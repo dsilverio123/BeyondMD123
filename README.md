@@ -94,7 +94,7 @@ Ansible: sudo apt install ansible
 
 <h4>Launch</h4>
 <pre><code>
-Code Here
+ansible-playbook -i hosts.ini install_docker.yml
 </code></pre>
 
 
