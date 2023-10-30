@@ -38,20 +38,7 @@ net-tools: sudo apt install net-tools
 
 <hr>
 
-<h3>3. Ansible Playbook for Docker on Debian Bookworm</h3>
-<a href="#">View the Ansible Playbook Project</a>
-
-<h4>Description</h4>
-<p>An idempotent Ansible playbook designed for Debian Bookworm systems. This playbook automates the installation and configuration of Docker, ensuring it's executed without unnecessary changes to the system state.</p>
-
-<h4>Dependencies</h4>
-<pre><code>
-Ansible: sudo apt install ansible
-</code></pre>
-
-<hr>
-
-<h3>Docker Permissions and Setup</h3>
+<h3>Docker Permissions and Setup (Needed for Project 2) </h3>
 <p><strong>Add the User to the Docker Group:</strong> Docker has a group named docker. Any user added to this group will have the required permissions to run Docker commands without using sudo.</p>
 <pre><code>
 sudo usermod -aG docker ubuntu
@@ -65,10 +52,24 @@ sudo systemctl start docker
 <pre><code>
 sudo docker-compose up
 </code></pre>
-<p><em>Note: This is not a recommended long-term solution. It's safer to run Docker commands without sudo by adding your user to the docker group as mentioned in the first step.</em></p>
 <p><strong>Additional Information:</strong> The hostname in <code>/BeyondMD123/systemhealth123$</code> docker-compose.yml has to be changed to the appropriate host.</p>
 
 <hr>
+
+<hr>
+
+<h3>3. Ansible Playbook for Docker on Debian Bookworm</h3>
+<a href="#">View the Ansible Playbook Project</a>
+
+<h4>Description</h4>
+<p>An idempotent Ansible playbook designed for Debian Bookworm systems. This playbook automates the installation and configuration of Docker, ensuring it's executed without unnecessary changes to the system state.</p>
+
+<h4>Dependencies</h4>
+<pre><code>
+Ansible: sudo apt install ansible
+</code></pre>
+
+
 
 <h3>Firewall Settings</h3>
 <p>Remember to always ensure your security groups are correctly configured, especially when deploying web-based applications. For the first project, allowing traffic on port 80 is vital:</p>
