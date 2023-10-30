@@ -8,6 +8,17 @@
     <li>OS: Ubuntu</li>
 </ul>
 
+<h3>Firewall Settings</h3>
+<p>Remember to always ensure your security groups are correctly configured, especially when deploying web-based applications. For the first project, allowing traffic on port 80 is vital:</p>
+
+<h4>Inbound Rules:</h4>
+<ul>
+    <li>HTTP (Port 80)</li>
+    <li>Custom TCP (Port 19999)</li>
+    <li>SSH (Port 22)</li>
+</ul>
+<p><em>Note: Always ensure that your firewall or security groups are configured according to the needs of your application and the best security practices.</em></p>
+
 <hr>
 
 <h3>1. Dockerized "Hello BeyondMD!" Page</h3>
@@ -22,6 +33,13 @@ Docker: sudo apt install docker.io
 Docker Compose: sudo apt install docker-compose
 </code></pre>
 
+
+<h4>Launch</h4>
+<pre><code>
+Code Here
+</code></pre>
+
+
 <hr>
 
 <h3>2. System Health Reporting Script for Debian</h3>
@@ -34,6 +52,11 @@ Docker Compose: sudo apt install docker-compose
 <pre><code>
 sysstat: sudo apt install sysstat
 net-tools: sudo apt install net-tools
+</code></pre>
+
+<h4>Launch</h4>
+<pre><code>
+Code Here
 </code></pre>
 
 <hr>
@@ -69,15 +92,9 @@ sudo docker-compose up
 Ansible: sudo apt install ansible
 </code></pre>
 
+<h4>Launch</h4>
+<pre><code>
+Code Here
+</code></pre>
 
 
-<h3>Firewall Settings</h3>
-<p>Remember to always ensure your security groups are correctly configured, especially when deploying web-based applications. For the first project, allowing traffic on port 80 is vital:</p>
-
-<h4>Inbound Rules:</h4>
-<ul>
-    <li>HTTP (Port 80)</li>
-    <li>Custom TCP (Port 19999)</li>
-    <li>SSH (Port 22)</li>
-</ul>
-<p><em>Note: Always ensure that your firewall or security groups are configured according to the needs of your application and the best security practices.</em></p>
