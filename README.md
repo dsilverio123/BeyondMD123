@@ -36,7 +36,9 @@ Docker Compose: sudo apt install docker-compose
 
 <h4>Launch</h4>
 <pre><code>
-docker build -t your_image_name .
+sudo usermod -aG docker ubuntu
+#log out, log back in
+sudo docker build -t your_image_name .
 docker-compose up -d
 #Find on host website 
 </code></pre>
@@ -61,28 +63,10 @@ net-tools: sudo apt install net-tools
 docker-compose up -d
 chmod +x monitor.sh
 ./monitor.sh
-#Find in localhost:19999
+#Find in URL:localhost:19999
 </code></pre>
 
-<hr>
-
-<h3>Docker Permissions and Setup (Needed for Project 2) </h3>
-<p><strong>Add the User to the Docker Group:</strong> Docker has a group named docker. Any user added to this group will have the required permissions to run Docker commands without using sudo.</p>
-<pre><code>
-sudo usermod -aG docker ubuntu
-</code></pre>
-<p>After running this command, you'll need to log out and log back in for the group changes to take effect.</p>
-<p><strong>Start the Docker Service:</strong> Ensure that the Docker service is running. If not, start it with:</p>
-<pre><code>
-sudo systemctl start docker
-</code></pre>
-<p><strong>Using sudo:</strong> As a quick workaround, you can use sudo to run Docker commands:</p>
-<pre><code>
-sudo docker-compose up
-</code></pre>
 <p><strong>Additional Information:</strong> The hostname in <code>/BeyondMD123/systemhealth123$</code> docker-compose.yml has to be changed to the appropriate host.</p>
-
-<hr>
 
 <hr>
 
@@ -94,6 +78,7 @@ sudo docker-compose up
 
 <h4>Dependencies</h4>
 <pre><code>
+Docker Compose: sudo apt install docker-compose
 Ansible: sudo apt install ansible
 </code></pre>
 
