@@ -36,7 +36,9 @@ Docker Compose: sudo apt install docker-compose
 
 <h4>Launch</h4>
 <pre><code>
-Code Here
+docker build -t your_image_name .
+docker-compose up -d
+#Find on host website 
 </code></pre>
 
 
@@ -56,7 +58,10 @@ net-tools: sudo apt install net-tools
 
 <h4>Launch</h4>
 <pre><code>
-Code Here
+docker-compose up -d
+chmod +x monitor.sh
+./monitor.sh
+#Find in localhost:19999
 </code></pre>
 
 <hr>
