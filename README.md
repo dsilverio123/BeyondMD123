@@ -39,7 +39,7 @@ Docker Compose: sudo apt install docker-compose
 sudo usermod -aG docker ubuntu
 # log out, log back in
 sudo docker build -t your_image_name .
-docker-compose up -d
+sudo docker-compose up -d
 # Find on host website 
 </code></pre>
 
