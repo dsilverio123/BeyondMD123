@@ -37,10 +37,10 @@ Docker Compose: sudo apt install docker-compose
 <h4>Launch</h4>
 <pre><code>
 sudo usermod -aG docker ubuntu
-#log out, log back in
+# log out, log back in
 sudo docker build -t your_image_name .
 docker-compose up -d
-#Find on host website 
+# Find on host website 
 </code></pre>
 
 
@@ -50,21 +50,30 @@ docker-compose up -d
 <a href="https://github.com/dsilverio123/BeyondMD123/tree/main/systemhealth123">View the System Health Project</a>
 
 <h4>Description</h4>
-<p>A script tailored for Debian systems to gather and report various system health metrics, including CPU usage, memory consumption, disk utilization, active users, and running processes.</p>
+<p>In this directory, you will find two essential components:</p>
+<ul>
+    <li>A Docker configuration for running the Netdata monitoring service.</li>
+    <li>A Bash script (monitor.sh) that collects and reports various system health metrics, such as CPU usage, memory consumption, disk utilization, active user count, and running processes.</li>
+</ul>
 
 <h4>Dependencies</h4>
 <pre><code>
 sysstat: sudo apt install sysstat
 net-tools: sudo apt install net-tools
+docker-compose: sudo apt install docker-compose
 </code></pre>
 
 <h4>Launch</h4>
 <pre><code>
-docker-compose up -d
+# This launches the Netdata monitoring service
+sudo docker-compose up -d
+# This launches the script that outputs key system information
 chmod +x monitor.sh
 ./monitor.sh
-#Find in URL:localhost:19999
+# Access the Netdata dashboard at URL: http://localhost:19999
 </code></pre>
+This updated content clarifies the two components present in the directory.
+
 
 <p><strong>Additional Information:</strong> The hostname in <code>/BeyondMD123/systemhealth123$</code> docker-compose.yml has to be changed to the appropriate host.</p>
 
@@ -86,5 +95,3 @@ Ansible: sudo apt install ansible
 <pre><code>
 ansible-playbook -i hosts.ini install_docker.yml
 </code></pre>
-
-
